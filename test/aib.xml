@@ -1,0 +1,60 @@
+<?xml version="1.0"?> 
+<!DOCTYPE asmarkup>
+<asmarkup>
+	<connectors/>
+	<objects>
+		<window 
+			center="true" 
+			width="253" height="300" 
+			minWidth="253"
+			backgroundColor="!purple"
+			title="'This is a test'" 
+			initialFirstResponder="#button1">
+			<hbox border="5" autoresizingMask="2">
+				<button id="button1" width="50" height="22" title="'1'"
+					target="#button2" action="'performClick'"
+					enableXResizing="false"
+					nextKeyView="#button2"/>
+				<separator minXMargin="6"/>
+				<button id="button2" width="50" height="22" title="'2'" 
+					target="#button3" action="'performClick'"
+					minXMargin="6"
+					enableXResizing="false"
+					nextKeyView="#button3"/>
+				<separator minXMargin="6"/>
+				<button id="button3" width="50" height="22" title="'3'" 
+					target="#button4" action="'performClick'"
+					minXMargin="6"
+					enableXResizing="true"
+					autoresizingMask="2"
+					nextKeyView="#button4"/>
+				<separator minXMargin="6"/>
+				<button id="button4" width="50" height="22" title="'4'" 
+					minXMargin="6"
+					enableXResizing="false"
+					nextKeyView="#button1"/>
+			</hbox>
+		</window>
+		<window x="10" y="60"
+			width="200" height="150"
+			backgroundColor="!0xCC0000"
+			title="'This is another window'">
+			<vbox border="5" autoresizingMask="2">
+				<textfield id="sourceText" editable="true" selectable="true"
+					width="189" height="22"
+					autoresizingMask="2"/>
+				<separator minYMargin="5"/>
+				<button width="70" height="22" title="'submit'" minYMargin="5"
+					target="#controller" action="'copyText'"
+					toolTip="'Moves the text above to the textfield below'"/>
+				<separator minYMargin="5"/>
+				<textfield id="destText" drawsBackground="false" editable="false" selectable="true"
+					width="189" height="22"
+					stringValue="'Click submit, if you dare'"
+					autoresizingMask="2"/>
+			</vbox>
+		</window>
+		<instance id="controller" instanceOf="org.actionstep.test.ASTestController"
+			src="#sourceText" dest="#destText"/>
+	</objects>
+</asmarkup>

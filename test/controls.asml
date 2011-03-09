@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE asmarkup>
+<asml>
+	<objects>
+		<window title="'User List'"
+			backgroundColor="!lightGray"
+			width="300" height="170"
+			minWidth="152" minHeight="187" 
+			miniaturizable="true"
+			closable="true"
+			resizable="false"
+			center="true">
+			<tabView x="5" y="5" width="290" height="160"
+				autoresizingMask="NSView.WidthSizable">
+				<tabItem identifier="'b'" label="'Business'">
+					<view x="3" y="3" width="200" height="154">
+						<vbox defaultMinYMargin="5">
+							<view instanceOf="org.actionstep.ASList"
+								x="3" y="3" width="280" height="100"
+								items="#listItems"/>
+							<hbox defaultMinXMargin="6">
+								<button title="'New'" 
+									width="90" height="25"/>
+								<button title="'Edit'"
+									width="90" height="25"/>
+								<button title="'Delete'"
+									width="90" height="25"
+									toolTip="'Delete the selected user'"/>
+							</hbox>
+						</vbox>	
+					</view>
+				</tabItem>
+				<tabItem identifier="'p'" label="'Personal'"></tabItem>
+				<tabItem identifier="'o'" label="'Other'"></tabItem>
+			</tabView>
+		</window>
+		<window title="'Peter Drinkwater - Personal Information'"
+			backgroundColor="!lightGray"
+			width="250" height="220"
+			miniaturizable="true"
+			closable="true"
+			resizable="false"
+			center="true">
+			
+				<vbox border="5" defaultMinYMargin="5" autoresizingMask="NSView.WidthSizable">
+					<hbox enableYResizing="true">
+						<label width="80" height="22" stringValue="'First name:'"/>
+						<textField width="160" height="22" stringValue="'Peter'"/>
+					</hbox>
+					<hbox>
+						<label width="80" height="22" stringValue="'Last name:'"/>
+						<textField width="160" height="22" stringValue="'Drinkwater'"/>
+					</hbox>
+					<hbox>
+						<button title="'Male'" buttonType="NSButtonType.NSRadioButton"/>
+						<button title="'Female'" buttonType="NSButtonType.NSRadioButton"/>
+					</hbox>
+					<label width="60" height="22" stringValue="'Notes'"
+						/>
+					<view instanceOf="org.actionstep.ASTextEditor"
+						width="240" height="80" minYMargin="1"/>
+					<hbox autoresizingMask="NSView.WidthSizable">
+						<view autoresizingMask="NSView.WidthSizable" />
+						<button title="'Apply'" 
+							width="90" height="25"
+							enableXResizing="false"/>
+					</hbox>
+				</vbox>
+			
+		</window>
+	</objects>
+</asml>

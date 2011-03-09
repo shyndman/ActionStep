@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+/usr/local/bin/mtasc -cp /opt/mtasc/std8 -cp "../src" -swf ActionStepLib.swf -header 800:600:20 -strict -pack org/actionstep -pack org/actionstep/asml -pack org/actionstep/layout -pack org/actionstep/images -pack org/actionstep/constants
+

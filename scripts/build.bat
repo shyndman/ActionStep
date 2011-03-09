@@ -1,0 +1,1 @@
+mtasc -version 8 -cp /opt/mtasc/std8 -cp "../src" -cp "../test/src" -swf ActionStep.swf -header 800:600:20 -strict -trace org.actionstep.ASDebugger.debugPanelTrace -pack org/actionstep -pack org/actionstep/images -pack org/actionstep/constants org/actionstep/test/ASTestMain -main

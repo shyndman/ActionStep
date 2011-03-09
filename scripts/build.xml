@@ -1,0 +1,161 @@
+<project name="ANS-Targets" basedir="." default="build-test">
+	<!-- path to mtasc -->
+	<property name="file.mtasc" value="mtasc.exe"/>
+
+	<!-- Project directories -->
+	<property name="dir.trunk" location="${basedir}/.."/>
+	<property name="dir.current" value="${dir.trunk}"/>
+
+	<property name="dir.src" value="${dir.current}/src"/>
+	<property name="dir.src.test" value="${dir.current}/test/src"/>
+	<property name="dir.dist" value="${dir.current}/dist"/>
+
+	<property name="dir.aib.java.src" value="${dir.current}/aib/java/src"/>
+	<property name="dir.aib.java.bin" value="${dir.current}/aib/java/bin"/>
+
+	<!-- files -->
+	<property name="file.swf" value="${dir.current}/Calculator.swf" />
+	<property name="file.start" value="-pack calcSample" />
+	<property name="mtd.trace" value="org.actionstep.ASDebugger.trace"/>
+
+	<!-- Helper Targets -->
+	<target name="clean" description="clean">
+		<delete dir="${dir.dist}"/>
+	</target>
+
+	<target name="prepare" depends="echo-tstamp">
+		<mkdir dir="${dir.dist}"/>
+	</target>
+
+	<target name="echo-tstamp">
+		<tstamp>
+			<format property="TSTAMP" pattern="hh:mm:ss"/>
+		</tstamp>
+		<echo>${TSTAMP} ${TODAY}</echo>
+	</target>
+
+	<target name="build" depends="prepare">
+		<exec executable="${file.mtasc}">
+			<arg line="-cp '${dir.src}'" />
+			<arg line="-swf '${file.swf}'" />
+			<arg line="-header 800:600:20" />
+			<arg line="-version 8" />
+			<!-- <arg line="-v" />	 -->
+			<arg line="${args}"/>
+		</exec>
+	</target>
+
+	<target name="build-trace" depends="check-args">
+		<antcall target="build">
+			<param name="args" value="
+				-trace ${mtd.trace}
+
+				${args}
+			"/>
+		</antcall>
+	</target>
+
+	<target name="check-args">
+		<condition property="args" value="${args}" else="">
+			<isset property="args"/>
+		</condition>
+	</target>
+
+	<!-- Main Targets -->
+	<target name="build-test" description="Build the test file with entry point in ${file.start}" depends="check-args">
+		<antcall target="build-trace">
+			<param name="args" value="
+				-cp '${dir.src.test}'
+				-main
+				${file.start}
+				-exclude '${dir.current}/ANSLib.exclude'
+
+				${args}
+			"/>
+		</antcall>
+	</target>
+
+	<!--
+		The following paths/packages are left out because they're not meant to be used yet:
+		-pack org/actionstep/rails
+		-pack org/actionstep/rpc/soap
+
+		The following are implied and thus left out:
+		-pack org/actionstep/events
+		-pack org/actionstep/rpc/xml
+		-pack org/actionstep/themes
+		-pack org/actionstep/themes/plastic/images
+		-pack org/actionstep/window
+	-->
+
+	<target name="build-library" description="Builds the entire ActionStep library" depends="check-args">
+		<antcall target="build">
+			<param name="args" value="
+				-pack org/actionstep
+				-pack org/actionstep/alert
+				-pack org/actionstep/asml
+				-pack org/actionstep/binding
+				-pack org/actionstep/browser
+				-pack org/actionstep/constants
+				-pack org/actionstep/controllers
+				-pack org/actionstep/cursor
+				-pack org/actionstep/dates
+				-pack org/actionstep/debug
+				-pack org/actionstep/drawers
+
+				-pack org/actionstep/formatter
+				-pack org/actionstep/graphics
+				-pack org/actionstep/images
+				-pack org/actionstep/images/glyphs
+				-pack org/actionstep/imageView
+				-pack org/actionstep/layout
+				-pack org/actionstep/menu
+				-pack org/actionstep/movie
+				-pack org/actionstep/predicates
+
+				-pack org/actionstep/rpc
+				-pack org/actionstep/rpc/remoting
+
+
+				-pack org/actionstep/rpc/xmlrpc
+				-pack org/actionstep/splitView
+				-pack org/actionstep/statusBar
+
+				-pack org/actionstep/themes/plastic
+
+				-pack org/actionstep/toolTip
+
+
+				${args}
+			"/>
+		</antcall>
+	</target>
+
+  <target name="build-library-trace" description="Build library with trace for debugging">
+		<antcall target="build-library">
+			<param name="args" value="
+				-trace ${mtd.trace}
+			"/>
+		</antcall>
+  </target>
+
+	<target name="build-aib-as" description="Build AIBApplcation for Flash">
+		<antcall target="build-trace">
+			<param name="args" value="
+				-cp '${dir.current}\aib\as\src'
+				-pack org/aib/configuration
+				-pack org/aib/palette
+				-pack org/aib/inspector
+				-main org/aib/AIBApplication.as
+			"/>
+		</antcall>
+	</target>
+
+	<target name="build-aib-java" description="Builds Java backend for AIB">
+		<javac srcdir="${dir.aib.java.src}" destdir="${dir.aib.java.bin}"/>
+	</target>
+
+	<target name="run-aib-java" description="Runs Java .class files" depends="build-aib-java">
+		<java classpath="${dir.aib.java.bin}" classname="org.aib.Main"/>
+	</target>
+</project>

@@ -1,0 +1,1 @@
+mtasc.exe -header 600:500:31 -version 8 -main -strict -trace org.actionstep.ASDebugger.debugPanelTrace -swf bugTracker.swf -cp "../src" -cp "../test\src" org\bugtracker\MainClass

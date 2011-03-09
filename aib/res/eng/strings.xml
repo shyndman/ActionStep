@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE strings>
+<strings>
+	<group name="Menu">
+		<!-- AIB Menu -->
+		<string name="AIB" value="AIB"/>
+		<string name="About" value="About AIB"/>
+		<!-- ellipsis appended -->
+		<string name="Preferences" value="Preferences"/>
+		<string name="Quit" value="Quit"/>
+		
+		<!-- File Menu -->
+		<string name="File" value="File"/>
+		<!-- ellipsis appended -->
+		<string name="FileNew" value="New"/>
+		<!-- ellipsis appended -->
+		<string name="Open" value="Open"/>
+		<string name="OpenRecent" value="Open Recent"/>
+		<string name="ClearMenu" value="Clear Menu"/>
+		<string name="Import" value="Import"/>
+		<string name="ImportResource" value="Import Resource File"/>
+		<string name="Close" value="Close"/>
+		<string name="Save" value="Save"/>
+		<!-- ellipsis appended -->
+		<string name="SaveAs" value="Save As"/>
+		<string name="Revert" value="Revert To Saved"/>
+		<string name="TestInterface" value="Test Interface"/>
+		
+		<!-- Edit Menu -->
+		<string name="Edit" value="Edit"/>
+		<string name="Undo" value="Undo %s"/>
+		<string name="Redo" value="Redo %s"/>
+		<string name="Cut" value="Cut"/>
+		<string name="Copy" value="Copy"/>
+		<string name="Paste" value="Paste"/>
+		<string name="Del" value="Delete"/>
+		<string name="SelectAll" value="Select All"/>
+		<string name="Duplicate" value="Duplicate"/>
+		<string name="Find" value="Find"/>
+		<!-- ellipsis appended -->
+		<string name="FindDialog" value="Find"/>
+		<string name="FindNext" value="Find Next"/>
+		<string name="FindPrevious" value="Find Previous"/>
+		<string name="FindUseSelection" value="Use Selection for Find"/>
+		<string name="JumpToSelection" value="Jump to Selection"/>
+		
+		<!-- Classes Menu -->
+		<string name="Classes" value="Classes"/>
+		<string name="Subclass" value="Subclass"/>
+		<string name="Instantiate" value="Instantiate"/>
+		<string name="AddOutlet" value="Add Outlet"/>
+		<string name="AddAction" value="Add Action"/>
+		<!-- ellipsis appended -->
+		<string name="ReadFiles" value="Read Files"/>
+		<string name="ReadSelectedClass" value="Read Selected Class"/>
+		<string name="CreateFiles" value="Create Files"/>
+		
+		<!-- Format Menu -->
+		<string name="Format" value="Format"/>
+		<string name="Font" value="Font"/>
+		<string name="ShowFonts" value="Show Fonts"/>
+		<string name="Bold" value="Bold"/>
+		<string name="Italic" value="Italic"/>
+		<string name="Underline" value="Underline"/>
+		<string name="Bigger" value="Bigger"/>
+		<string name="Smaller" value="Smaller"/>
+		<string name="CopyStyle" value="Copy Style"/>
+		<string name="PasteStyle" value="Paste Style"/>
+		<string name="Text" value="Text"/>
+		<string name="AlignLeft" value="Align Left"/>
+		<string name="AlignCenter" value="Align Center"/>
+		<string name="AlignRight" value="Align Right"/>
+		<string name="ShowRuler" value="Show Ruler"/>
+		<string name="CopyRuler" value="Copy Ruler"/>
+		<string name="PasteRuler" value="Paste Ruler"/>
+		
+		<!-- Layout Menu -->
+		<string name="Layout" value="Layout"/>
+		<string name="Alignment" value="Alignment"/>
+		<string name="AlignmentPanel" value="Alignment Panel"/>
+		<string name="AlignLeftEdges" value="Align Left Edges"/>
+		<string name="AlignRightEdges" value="Align Right Edges"/>
+		<string name="AlignTopEdges" value="Align Top Edges"/>
+		<string name="AlignBottomEdges" value="Align Bottom Edges"/>
+		<string name="AlignVerticalCenters" value="Align Vertical Centers"/>
+		<string name="AlignHorizontalCenters" value="Align Horizontal Centers"/>
+		<string name="AlignBaselines" value="Align Baselines"/>
+		<string name="MakeCenteredColumn" value="Make Centered Column"/>
+		<string name="MakeCenteredRow" value="Make Centered Row"/>
+		<string name="BringToFront" value="Bring to Front"/>
+		<string name="SendToBack" value="Send to Back"/>
+		<string name="SameSize" value="Same Size"/>
+		<string name="SizeToFit" value="Size to Fit"/>
+		<string name="Transpose" value="Transpose"/>
+		<string name="MakeSubviewsOf" value="Make subviews of"/>
+		<string name="MakeSubviewsOfBox" value="Box"/>
+		<string name="MakeSubviewsOfCustomView" value="Custom View"/>
+		<string name="MakeSubviewsOfScrollView" value="Scroll View"/>
+		<string name="MakeSubviewsOfSplitView" value="Split View"/>
+		<string name="MakeSubviewsOfTabView" value="Tab View"/>
+		<string name="UnpackSubviews" value="Unpack subviews"/>
+		<string name="LockFrame" value="Lock Frame"/>
+		<string name="UnlockFrame" value="Unlock Frame"/>
+		<string name="Group" value="Group"/>
+		<string name="Ungroup" value="Ungroup"/>
+		<string name="Guides" value="Guides"/>
+		<string name="ShowGuides" value="Show Guides"/>
+		<string name="HideGuides" value="Hide Guides"/>
+		<string name="LockGuides" value="Lock Guides"/>
+		<string name="UnlockGuides" value="Unlock Guides"/>
+		<string name="AddHorizontalGuide" value="Add Horizontal Guide"/>
+		<string name="AddVerticalGuide" value="Add Vertical Guides"/>
+		<string name="EnableGuidelines" value="Enable Guidelines"/>
+		<string name="DisableGuidelines" value="Disable Guidelines"/>
+		
+		<!-- Tools Menu -->
+		<string name="Tools" value="Tools"/>
+		<string name="ShowInfo" value="Show Info"/>
+		<string name="Palettes" value="Palettes"/>
+		<string name="ShowPalettes" value="Show Palettes"/>
+		<!-- ellipsis appended -->
+		<string name="PalettePreferences" value="Palette Preferences"/>
+		<!-- ellipsis appended -->
+		<string name="CustomizeToolbar" value="Customize Toolbar"/>
+		<string name="PaletteNew" value="New Palette"/>
+		<string name="PaletteSave" value="Save"/>
+		<!-- ellipsis appended -->
+		<string name="PaletteSaveAs" value="Save As"/>
+		<string name="PaletteRevert" value="Revert to Saved"/>
+		<string name="ShowColors" value="Show Colors"/>
+		
+		<!-- Help Menu -->
+		<string name="Help" value="Help"/>
+		<string name="ShowHelp" value="AIB Help"/>
+		<string name="ReleaseNotes" value="Release Notes"/>
+		<string name="ShowFAQ" value="FAQ"/>
+	</group>
+	<group name="Palettes">
+		<string name="WindowTitle" value="Palettes"/>
+		<string name="ToolTipFormat" value="AIB Palette - %s"/>
+		<group name="Menus">
+			<string name="Name" value="Menus"/>
+		</group>
+		<group name="Controls">
+			<string name="Name" value="Controls"/>
+		</group>
+		<group name="Text">
+			<string name="Name" value="Text"/>
+		</group>
+		<group name="Windows">
+			<string name="Name" value="Windows"/>
+		</group>
+		<group name="Data">
+			<string name="Name" value="Data"/>
+		</group>
+		<group name="Containers">
+			<string name="Name" value="Containers"/>
+		</group>
+		<group name="Controllers">
+			<string name="Name" value="Controllers"/>
+		</group>
+	</group>
+	<group name="Inspectors">
+		<string name="WindowTitle" value="%s Info"/>
+		<string name="BasicWindowTitle" value="Info"/>
+		<string name="NotApplicable" value="Not Applicable"/>
+		<string name="MultiSel" value="Multiple Selection"/>
+		<string name="NoSel" value="No Selection"/>
+		<group name="Attributes">
+			<string name="Name" value="Attributes"/>
+		</group>
+		<group name="Connections">
+			<string name="Name" value="Connections"/>
+		</group>
+		<group name="Size">
+			<string name="ContentRect" value="Content Rectangle"/>
+			<string name="MinWidth" value="Min w:"/>
+			<string name="MaxWidth" value="Max w:"/>
+			<string name="Name" value="Size"/>
+			<string name="Frame" value="Frame"/>
+			<string name="Layout" value="Layout"/>
+			<string name="SizeLock" value="Lock"/>
+			<string name="Origin" value="Origin"/>
+			<string name="OriginX" value="x:"/>
+			<string name="OriginY" value="y:"/>
+			<string name="OriginTopLeft" value="Top / Left:"/>
+			<string name="OriginBottomLeft" value="Bottom / Left:"/>
+			<string name="OriginTopRight" value="Top / Right:"/>
+			<string name="OriginBottomRight" value="Bottom / Right:"/>
+			<string name="Size" value="Size"/>
+			<string name="SizeWidth" value="w:"/>
+			<string name="SizeHeight" value="h:"/>
+			<string name="SizeMaxX" value="maxX:"/>
+			<string name="SizeMaxY" value="maxY:"/>
+			<string name="SizeWidthHeight" value="Width / Height:"/>
+			<string name="SizeMaxXMaxY" value="MaxX / MaxY:"/>
+			<string name="Autosizing" value="Autosizing"/>
+			<string name="Current" value="Current"/>
+		</group>
+		<group name="Bindings">
+			<string name="Name" value="Bindings"/>
+		</group>
+		<group name="CustomClass">
+			<string name="Name" value="Custom class"/>
+		</group>
+		<group name="Help">
+			<string name="Name" value="Help"/>
+		</group>
+	</group>
+	<group name="Resources">
+		<string name="WindowTitle" value="%s"/>
+		<group name="Instances">
+			<string name="Name" value="Instances"/>
+			<string name="InvalidConnections" 
+				value="Instance contains bad/missing connections"/>
+		</group>
+		<group name="Classes">
+			<string name="Name" value="Classes"/>
+		</group>
+		<group name="Images">
+			<string name="Name" value="Images"/>
+		</group>
+		<group name="Sounds">
+			<string name="Name" value="Sounds"/>
+		</group>
+		<group name="ASML">
+			<string name="Name" value="ASML"/>
+		</group>
+	</group>
+	<group name="Defaults">
+		<string name="WindowTitle" value="Title"/>
+	</group>
+</strings>

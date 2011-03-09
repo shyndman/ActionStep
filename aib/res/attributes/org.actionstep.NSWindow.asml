@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE asmarkup>
+<asml>
+	<vbox border="5" defaultMinYMargin="5"
+		autoresizingMask="NSView.WidthSizable">
+		<hbox enableYResizing="false"
+			autoresizingMask="NSView.WidthSizable">
+			<label 
+				stringValue="'Window Title:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.MinXMargin"
+				/>
+			<textfield 
+				id="windowTitle"
+				width="150" 
+				height="22"
+				autoresizingMask="NSView.MaxXMargin"/>
+		</hbox>
+		<separator enableYResizing="false"/>
+		<vbox defaultMinYMargin="5"
+			autoresizingMask="NSView.MinXMargin|NSView.MaxXMargin"
+			enableYResizing="false">
+			<button
+				id="releasedWhenClosed"
+				stringValue="'Released when closed'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+			<button
+				id="hideOnDeactivate"
+				stringValue="'Hide on deactivate'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+			<button
+				id="visibleAtLaunch"
+				stringValue="'Visible at launch time'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+			<button
+				id="oneShot"
+				stringValue="'One Shot'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+			<button
+				id="utilityWindow"
+				stringValue="'Utility window (Panel only)'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+			<button
+				id="nonActivatingPanel"
+				stringValue="'Non activating Panel (Panel only)'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+			<button
+				id="hasTexture"
+				stringValue="'Has texture'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+			<button
+				id="hasShadow"
+				stringValue="'Has shadow'"
+				buttonType="NSButtonType.NSSwitchButton"
+				/>
+		</vbox>
+	</vbox>
+	
+	<!-- string IDs -->
+	<instance
+		id="strWindowTitle" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+	<instance
+		id="strReleasedWhenClosed" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+	<instance
+		id="strHideOnDeactivate" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+	<instance
+		id="strOneShot" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+	<instance
+		id="strUtilityWindow" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+	<instance
+		id="strNonActivatingPanel" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+	<instance
+		id="strHasTexture" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+	<instance
+		id="strHasShadow" 
+		instanceOf="org.aib.localization.LocalizedString"
+		stringId=""/>
+
+</asml>

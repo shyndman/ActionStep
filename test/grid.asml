@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE asmarkup>
+<asmarkup>
+	<objects>
+		<window width="300" height="300" backgroundColor="!green"
+			resizable="false" center="true">
+			<grid x="0" y="0" width="250" height="100">
+				<row>
+					<cell minXMargin="6" maxXMargin="12">
+						<button title="'This is a button'"/>
+					</cell>
+					<cell>
+						<button title="'This is another button'"/>
+					</cell>
+				</row>
+				<row>
+					<cell>
+						<button title="'This is a button'"/>
+					</cell>
+					<cell margin="5">
+						<button title="'This is a button'"/>
+					</cell>
+				</row>
+				<row>
+					<cell>
+						<button title="'This is a button'"/>
+					</cell>
+					<cell>
+						<button title="'This is another button'"/>
+					</cell>
+				</row>
+			</grid>
+		</window>
+	</objects>
+</asmarkup>

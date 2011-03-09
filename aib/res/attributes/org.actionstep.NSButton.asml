@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE asmarkup>
+<asml>
+<grid border="5">
+	<row enableYResizing="false">
+		<cell margin="1" enableXResizing="false">
+			<label stringValue="'Title:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1" enableXResizing="true">
+			<textField id="title"
+				autoresizingMask="NSView.WidthSizable"
+				width="170"
+				height="22"
+				nextKeyView="#altTitle"
+				/>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Alt. Title:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<textField id="altTitle"
+				autoresizingMask="NSView.WidthSizable"
+				width="170"
+				height="22"
+				nextKeyView="#icon"
+				/>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Icon:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<textField id="icon"
+				autoresizingMask="NSView.WidthSizable"
+				width="170"
+				height="22"
+				nextKeyView="#altIcon"
+				/>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Alt. Icon:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<textField id="altIcon"
+				autoresizingMask="NSView.WidthSizable"
+				width="170"
+				height="22"
+				nextKeyView="#keyEquiv"
+				/>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Key Equiv:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<hbox defaultMinXMargin="3"
+				autoresizingMask="NSView.WidthSizable">
+				<textField id="keyEquiv"
+					width="60"
+					height="22"
+					nextKeyView="#tag"
+					/>
+				<view id="keyEquivPresets"
+					instanceOf="org.actionstep.NSComboBox"
+					autoresizingMask="NSView.WidthSizable"
+					width="87"
+					height="22"
+					/>
+			</hbox>	
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Key Mod:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<!-- fill this in -->
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Type:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<view id="type"
+				instanceOf="org.actionstep.NSComboBox"
+				autoresizingMask="NSView.WidthSizable"
+				width="170"
+				height="22"
+				/>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Behavior:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<view id="behavior"
+				instanceOf="org.actionstep.NSComboBox"
+				autoresizingMask="NSView.WidthSizable"
+				width="170"
+				height="22"
+				/>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Size:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<hbox defaultMinXMargin="3"
+				autoresizingMask="NSView.WidthSizable">
+				<view id="size"
+					instanceOf="org.actionstep.NSComboBox"
+					width="80"
+					height="22"
+					/>
+				<label stringValue="'Inset:'"
+					alignment="NSTextAlignment.NSRightTextAlignment"
+					/>
+				<view id="inset"
+					instanceOf="org.actionstep.NSComboBox"
+					autoresizingMask="NSView.WidthSizable"
+					width="80"
+					height="22"
+					/>
+			</hbox>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<label stringValue="'Tag:'"
+				alignment="NSTextAlignment.NSRightTextAlignment"
+				autoresizingMask="NSView.WidthSizable"
+				/>
+		</cell>
+		<cell margin="1">
+			<textField id="tag"
+				width="80"
+				height="22"
+				nextKeyView="#title"
+				/>
+		</cell>
+	</row>
+	<row enableYResizing="false">
+		<cell margin="1">
+			<vbox autoresizingMask="NSView.WidthSizable"
+				defaultMinYMargin="6">
+				<label stringValue="'Alignment:'"
+					alignment="NSTextAlignment.NSRightTextAlignment"
+					autoresizingMask="NSView.WidthSizable"
+					/>
+				<label stringValue="'Icon Pos:'"
+					alignment="NSTextAlignment.NSRightTextAlignment"
+					autoresizingMask="NSView.WidthSizable"
+					/>
+			</vbox>
+		</cell>
+		<cell margin="1">
+			<hbox>
+				<vbox minXMargin="4" defaultMinYMargin="4">
+					<button id="alignment"
+						width="100" 
+						height="27"/>
+					<button id="iconPosition"
+						width="100" 
+						height="54"/>
+				</vbox>
+				<separator minXMargin="10"/>
+				<vbox minXMargin="10">
+					<button
+						id="bordered"
+						stringValue="'Bordered'"
+						buttonType="NSButtonType.NSSwitchButton"
+						/>
+					<button
+						id="transparent"
+						stringValue="'Transparent'"
+						buttonType="NSButtonType.NSSwitchButton"
+						/>
+					<button
+						id="continuous"
+						stringValue="'Continuous'"
+						buttonType="NSButtonType.NSSwitchButton"
+						/>
+					<button
+						id="enabled"
+						stringValue="'Enabled'"
+						buttonType="NSButtonType.NSSwitchButton"
+						/>
+					<button
+						id="selected"
+						stringValue="'Selected'"
+						buttonType="NSButtonType.NSSwitchButton"
+						/>
+					<button
+						id="hidden"
+						stringValue="'Hidden'"
+						buttonType="NSButtonType.NSSwitchButton"
+						/>
+				</vbox>
+			</hbox>
+		</cell>
+	</row>
+</grid>
+</asml>

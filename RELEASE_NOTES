@@ -1,0 +1,64 @@
+ActionStep Alpha 1 Release Notes
+December 7th, 2005
+
+Welcome to the first public release of ActionStep. We've got a lot of work done
+and we're exited to see what you can do with it.
+
+Requirements:
+	ActionStep requires the MTASC compiler (http://mtasc.org)
+	Flash 8 player
+	
+Directories:
+	/			- The root directory. Contains compiling scripts and project 
+				  files 
+	/lib/		- Files necessary for some aspects of ActionStep
+	/src/		- The root source folder
+	/src/org/actionstep/test/ - ActionStep tests
+	/test/		- A few additional tests, and files required for tests
+	/examples/	- An example application
+	
+Getting started:
+	ActionStep is a large library, and you may find yourself getting lost at
+	first. To help you out with this, we've supplied a collection of examples
+	to help you along the way. These examples can be found in the
+	
+	src/org/actionstep/test/
+	
+	directory. The main class for these tests is the file called ASTestMain.as
+	in this directory.
+
+	To run a test, simply open up ASTestMain, and change line 17 as follows:
+	
+		{TEST_CLASS_TO_RUN}.test();
+		
+	Change {TEST_CLASS_TO_RUN} to the test class you'd like to run, and then
+	compile.
+	
+The example application:
+	To ease you into ActionStep development, we have provided the source code
+	for a small example application, BugTracker. The bug tracker main class can
+	be found at
+	
+	/examples/org/bugtracker/MainClass.as
+	
+	To compile the example application on windows, simple run
+	
+	/buildExample.bat
+	
+	and run the resulting bugTracker.swf.
+	
+Links of interest:
+	The project webpage:
+	http://actionstep.org
+	
+	ActionStep on OSFlash:
+	http://www.osflash.org/actionstep/
+	
+	Mailing list signup:
+	http://lists.sourceforge.net/lists/listinfo/actionstep-core
+	
+	ActionStep version control and wiki (submit bugs here):
+	https://secure.sourcesecure.co.uk/trac/osflash/actionstep 
+	
+	Compiler required by ActionStep:
+	http://mtasc.org

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE asml>
+<asml>
+	<objects>
+		<window title="'Calculator'" resizable="true" closable="no"
+			backgroundColor="!lightGray"
+			width="150" height="165"
+			minWidth="152" minHeight="187" 
+			miniaturizable="false"
+			center="true">
+			<vbox autoresizingMask="NSView.WidthSizable">
+				<textfield editable="no" id="screen"
+					autoresizingMask="NSView.WidthSizable"/>
+				<hbox autoresizingMask="NSView.WidthSizable">
+					<!-- This view pushes the clear button to the right -->
+					<view autoresizingMask="NSView.WidthSizable" />
+					<button title="'C'" target="#Controller" action="clear:"
+						width="35" height="25"
+						enableXResizing="false"
+						toolTip="'Clear'"/>
+				</hbox>
+				<hbox autoresizingMask="NSView.WidthSizable">
+					<button title="'1'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'2'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'3'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+				</hbox>
+				<hbox autoresizingMask="NSView.WidthSizable">
+					<button title="'4'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'5'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'6'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+				</hbox>
+				<hbox autoresizingMask="NSView.WidthSizable">
+					<button title="'7'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'8'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'9'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+				</hbox>
+				<hbox autoresizingMask="NSView.WidthSizable">
+					<button title="'+'" target="#Controller" action="add:"
+						width="50" height="25"
+						toolTip="'Add the current number'"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'0'" target="#Controller" action="digit:"
+						width="50" height="25"
+						autoresizingMask="NSView.WidthSizable"/>
+					<button title="'='" target="#Controller" action="total:"
+						width="50" height="25"
+						toolTip="'Calculate the total'"
+						autoresizingMask="NSView.WidthSizable"/>
+				</hbox>
+			</vbox>
+		</window>
+		<instance id="Controller" instanceOf="calcSample.Controller" 
+			textField="#screen"/>
+	</objects>
+</asml>

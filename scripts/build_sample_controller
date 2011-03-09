@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# with OS X trace
+/usr/local/bin/mtasc -cp /opt/mtasc/std8 -cp "../test/src" -cp "../src" -swf Controller.swf -header 800:600:20 -strict -pack sample -exclude "org.actionstep.*" -main
+
+echo 'Build complete.'
