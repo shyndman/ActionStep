@@ -25,6 +25,9 @@ dwsync.xml
 *.komodoproject
 .komodotools
 
+# ASDT
+.as2_classpath
+
 # Folders to ignore
 .hg
 .svn
